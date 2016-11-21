@@ -1,15 +1,11 @@
+var blueprintjs = require('style-loader!css-loader!@blueprintjs/core/dist/blueprint.css');
+
+
 var React = require('react');
 var ReactDOM = require('react-dom');
-
-var HelloWorld = React.createClass({
-  render: function() {
-    return (
-      <div>Hello, cocksuckers!</div>
-    )
-  }
-});
+var routes = require('./config/routes');
 
 ReactDOM.render(
-  <HelloWorld />,
+  routes,
   document.getElementById('app')
 );
